@@ -33,6 +33,7 @@ fn matmul<T : Num>(a : Matrix<T>, b : Matrix<T>) -> Matrix<T> { ... }
 fn fibonacci_logarithmic_impl<T : Integral>(n: T, a: Matrix<T>, b: Matrix<T>) -> T {
     if n == 0 { a.m01 } else { ... }
 }"#;
+const REUSSIR_REPO_URL: &str = "https://github.com/schrodingerzhu/reussir";
 
 #[component]
 fn App() -> impl IntoView {
@@ -164,7 +165,12 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-timeline text-cyan-300"></i>
                             "Compilation Observatory"
                         </h2>
-                        <p class="font-mono text-xs text-slate-400">"from Reussir technical presentation"</p>
+                        <p class="font-mono text-xs text-slate-400">
+                            "from "
+                            <a class="underline decoration-cyan-400/60 underline-offset-2 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                                "github.com/schrodingerzhu/reussir"
+                            </a>
+                        </p>
                     </div>
                     <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
                         <div class="rounded-xl border border-slate-700 bg-slate-950 p-5">
@@ -284,7 +290,12 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-flask-vial text-cyan-300"></i>
                             "Ground-Truth Examples"
                         </h2>
-                        <p class="font-mono text-xs text-slate-400">"from Reussir integration test suite"</p>
+                        <p class="font-mono text-xs text-slate-400">
+                            "examples from "
+                            <a class="underline decoration-cyan-400/60 underline-offset-2 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                                "reussir/tests/integration"
+                            </a>
+                        </p>
                     </div>
                     <div class="grid gap-4 lg:grid-cols-3">
                         <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 md:p-6">
@@ -308,7 +319,12 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-robot text-cyan-200"></i>
                             "AI View (Excerpt)"
                         </h2>
-                        <p class="mt-1 font-mono text-xs text-cyan-200">"from Reussir AI collaboration guide"</p>
+                        <p class="mt-1 font-mono text-xs text-cyan-200">
+                            "from "
+                            <a class="underline decoration-cyan-300/70 underline-offset-2 hover:text-cyan-100" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                                "AGENTS.md in public repo"
+                            </a>
+                        </p>
                         <blockquote class="mt-5 rounded-xl border-l-4 border-cyan-300 bg-slate-950/70 p-5 text-sm text-slate-200">
                             "Reussir is developed \"with AI, and for AI.\""
                         </blockquote>
@@ -324,7 +340,12 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-user-group text-cyan-300"></i>
                             "People Involved"
                         </h2>
-                        <p class="mt-1 font-mono text-xs text-slate-400">"human contributors only"</p>
+                        <p class="mt-1 font-mono text-xs text-slate-400">
+                            "human contributors only, based on "
+                            <a class="underline decoration-cyan-400/60 underline-offset-2 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                                "repository history"
+                            </a>
+                        </p>
                         <div class="mt-4 grid gap-2 text-sm">
                             <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"Schrodinger ZHU Yifan"</div>
                             <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"Yekai Pan"</div>
