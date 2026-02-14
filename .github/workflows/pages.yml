@@ -27,12 +27,9 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: wasm32-unknown-unknown
-
-      - name: Cache cargo
-        uses: swatinem/rust-cache@v2
+        run: |
+          rustup toolchain install stable --profile minimal --target wasm32-unknown-unknown
+          rustup default stable
 
       - name: Install Trunk
         run: cargo install trunk --locked
