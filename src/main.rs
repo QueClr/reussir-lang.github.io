@@ -164,7 +164,7 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-timeline text-cyan-300"></i>
                             "Compilation Observatory"
                         </h2>
-                        <p class="font-mono text-xs text-slate-400">"from doc/presentation/main.tex"</p>
+                        <p class="font-mono text-xs text-slate-400">"from Reussir technical presentation"</p>
                     </div>
                     <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
                         <div class="rounded-xl border border-slate-700 bg-slate-950 p-5">
@@ -284,9 +284,7 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-flask-vial text-cyan-300"></i>
                             "Ground-Truth Examples"
                         </h2>
-                        <p class="font-mono text-xs text-slate-400">
-                            "/home/schrodingerzy/Documents/reussir/tests/integration/frontend"
-                        </p>
+                        <p class="font-mono text-xs text-slate-400">"from Reussir integration test suite"</p>
                     </div>
                     <div class="grid gap-4 lg:grid-cols-3">
                         <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 md:p-6">
@@ -310,9 +308,7 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-robot text-cyan-200"></i>
                             "AI View (Excerpt)"
                         </h2>
-                        <p class="mt-1 font-mono text-xs text-cyan-200">
-                            "/home/schrodingerzy/Documents/reussir/AGENTS.md"
-                        </p>
+                        <p class="mt-1 font-mono text-xs text-cyan-200">"from Reussir AI collaboration guide"</p>
                         <blockquote class="mt-5 rounded-xl border-l-4 border-cyan-300 bg-slate-950/70 p-5 text-sm text-slate-200">
                             "Reussir is developed \"with AI, and for AI.\""
                         </blockquote>
@@ -328,9 +324,7 @@ fn App() -> impl IntoView {
                             <i class="fa-solid fa-user-group text-cyan-300"></i>
                             "People Involved"
                         </h2>
-                        <p class="mt-1 font-mono text-xs text-slate-400">
-                            "filtered to humans from git shortlog"
-                        </p>
+                        <p class="mt-1 font-mono text-xs text-slate-400">"human contributors only"</p>
                         <div class="mt-4 grid gap-2 text-sm">
                             <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"Schrodinger ZHU Yifan"</div>
                             <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"Yekai Pan"</div>
