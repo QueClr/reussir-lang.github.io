@@ -31,8 +31,13 @@ jobs:
           rustup toolchain install stable --profile minimal --target wasm32-unknown-unknown
           rustup default stable
 
+      - name: Install cargo-binstall
+        run: |
+          curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+
       - name: Install Trunk
-        run: cargo install trunk --locked
+        run: cargo binstall trunk --no-confirm
 
       - name: Build site
         run: trunk build --release --public-url /
