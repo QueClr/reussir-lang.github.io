@@ -42,17 +42,37 @@ fn App() -> impl IntoView {
             <div class="science-grid absolute inset-0 opacity-50"></div>
             <div class="hero-aurora absolute left-[-8rem] top-[-8rem] h-[28rem] w-[28rem] rounded-full blur-3xl"></div>
             <div class="hero-aurora-2 absolute bottom-[-10rem] right-[-10rem] h-[30rem] w-[30rem] rounded-full blur-3xl"></div>
+            <div class="hero-aurora-3 absolute left-[40%] top-[45%] h-[24rem] w-[24rem] rounded-full blur-3xl"></div>
+
+            <nav class="nav-bar sticky top-0 z-50 border-b border-slate-700/50">
+                <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 md:px-8">
+                    <a href="#" class="font-display text-lg font-bold text-white transition-colors duration-200 hover:text-cyan-300">"Reussir"</a>
+                    <div class="flex items-center gap-5">
+                        <a href="#observatory" class="text-sm text-slate-300 transition-colors duration-200 hover:text-cyan-300">"Pipeline"</a>
+                        <a href="#evidence" class="text-sm text-slate-300 transition-colors duration-200 hover:text-cyan-300">"Examples"</a>
+                        <a
+                            class="inline-flex items-center gap-1.5 rounded-lg border border-slate-600 bg-slate-800/60 px-3 py-1.5 text-xs font-medium text-slate-200 transition-all duration-200 hover:border-cyan-400/50 hover:text-cyan-200"
+                            href=REUSSIR_REPO_URL
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            "Source"
+                        </a>
+                    </div>
+                </div>
+            </nav>
 
             <main class="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-5 pb-20 pt-8 md:px-8 md:pt-12">
                 <section class="rounded-3xl border border-slate-700/70 bg-slate-900/70 p-7 backdrop-blur md:p-12">
                     <div class="grid gap-8 lg:grid-cols-[1.25fr_1fr]">
                         <div class="space-y-5">
-                            <p class="inline-flex items-center gap-2 rounded-full border border-cyan-300/50 bg-cyan-400/10 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.18em] text-cyan-200">
+                            <p class="badge-glow inline-flex items-center gap-2 rounded-full border border-cyan-300/50 bg-cyan-400/10 px-4 py-1.5 font-mono text-xs uppercase tracking-[0.18em] text-cyan-200">
                                 <i class="fa-solid fa-satellite-dish"></i>
-                                "comming soon"
+                                "coming soon"
                             </p>
                             <h1 class="font-display text-4xl leading-tight text-white md:text-6xl">
-                                "Reussir"
+                                <span class="animated-gradient-text">"Reussir"</span>
                                 <span class="block text-2xl text-slate-300 md:text-4xl">
                                     "Compiler Research, Memory Reuse, and MLIR"
                                 </span>
@@ -62,21 +82,21 @@ fn App() -> impl IntoView {
                             </p>
                             <div class="flex flex-wrap gap-3">
                                 <a
-                                    class="btn h-auto min-h-0 gap-2 rounded-2xl border-none bg-cyan-300 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-200"
+                                    class="btn h-auto min-h-0 gap-2 rounded-2xl border-none bg-cyan-300 px-6 py-3 text-sm font-semibold text-slate-950 transition-all duration-200 hover:bg-cyan-200 hover:shadow-lg hover:shadow-cyan-400/20"
                                     href="#observatory"
                                 >
                                     <i class="fa-solid fa-diagram-project"></i>
                                     <span class="whitespace-nowrap leading-none">"See Pipeline"</span>
                                 </a>
                                 <a
-                                    class="btn h-auto min-h-0 gap-2 rounded-2xl border border-slate-500 bg-transparent px-6 py-3 text-sm font-semibold text-slate-200 hover:bg-slate-800"
+                                    class="btn h-auto min-h-0 gap-2 rounded-2xl border border-slate-500 bg-transparent px-6 py-3 text-sm font-semibold text-slate-200 transition-all duration-200 hover:bg-slate-800"
                                     href="#evidence"
                                 >
                                     <i class="fa-solid fa-code"></i>
                                     <span class="whitespace-nowrap leading-none">"Read Test Evidence"</span>
                                 </a>
                                 <a
-                                    class="btn h-auto min-h-0 gap-2 rounded-2xl border border-cyan-400/60 bg-slate-900 px-6 py-3 text-sm font-semibold text-cyan-200 hover:bg-slate-800"
+                                    class="btn h-auto min-h-0 gap-2 rounded-2xl border border-cyan-400/60 bg-slate-900 px-6 py-3 text-sm font-semibold text-cyan-200 transition-all duration-200 hover:bg-slate-800"
                                     href="/reussir-design-slides.pdf"
                                     target="_blank"
                                     rel="noreferrer"
@@ -116,50 +136,50 @@ fn App() -> impl IntoView {
                                 </div>
                             </div>
                             <div class="mt-5 grid grid-cols-2 gap-2 text-xs">
-                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300">"token reuse"</span>
-                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300">"drop expansion"</span>
-                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300">"inc/dec fusion"</span>
-                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300">"mixed MM"</span>
+                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300 transition-all duration-200 hover:border-cyan-400/40 hover:text-cyan-200">"token reuse"</span>
+                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300 transition-all duration-200 hover:border-cyan-400/40 hover:text-cyan-200">"drop expansion"</span>
+                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300 transition-all duration-200 hover:border-cyan-400/40 hover:text-cyan-200">"inc/dec fusion"</span>
+                                <span class="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-center text-slate-300 transition-all duration-200 hover:border-cyan-400/40 hover:text-cyan-200">"mixed MM"</span>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                    <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-6">
+                    <article class="group rounded-2xl border border-slate-700 bg-slate-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5">
                         <p class="font-mono text-xs text-cyan-300">"01 / FP foundation"</p>
                         <h2 class="mt-2 flex items-center gap-2 font-display text-xl text-white">
-                            <i class="fa-solid fa-shuffle text-cyan-300"></i>
+                            <i class="fa-solid fa-shuffle text-cyan-300 transition-transform duration-300 group-hover:scale-110"></i>
                             "Intro-Elim Reuse"
                         </h2>
                         <p class="mt-2 text-sm text-slate-300">
                             "Eliminated structure and newly introduced structure can share storage when ownership allows."
                         </p>
                     </article>
-                    <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-6">
+                    <article class="group rounded-2xl border border-slate-700 bg-slate-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5">
                         <p class="font-mono text-xs text-cyan-300">"02 / memory model"</p>
                         <h2 class="mt-2 flex items-center gap-2 font-display text-xl text-white">
-                            <i class="fa-solid fa-memory text-cyan-300"></i>
+                            <i class="fa-solid fa-memory text-cyan-300 transition-transform duration-300 group-hover:scale-110"></i>
                             "FBIP Direction"
                         </h2>
                         <p class="mt-2 text-sm text-slate-300">
                             "Functional-But-In-Place: unique references unlock safe in-place mutation and reuse."
                         </p>
                     </article>
-                    <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-6">
+                    <article class="group rounded-2xl border border-slate-700 bg-slate-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5">
                         <p class="font-mono text-xs text-cyan-300">"03 / compilation"</p>
                         <h2 class="mt-2 flex items-center gap-2 font-display text-xl text-white">
-                            <i class="fa-solid fa-cubes text-cyan-300"></i>
+                            <i class="fa-solid fa-cubes text-cyan-300 transition-transform duration-300 group-hover:scale-110"></i>
                             "Pass-Oriented IR"
                         </h2>
                         <p class="mt-2 text-sm text-slate-300">
                             "Token instantiation, infer-tag, and drop expansion expose optimization opportunities."
                         </p>
                     </article>
-                    <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-6">
+                    <article class="group rounded-2xl border border-slate-700 bg-slate-900/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5">
                         <p class="font-mono text-xs text-cyan-300">"04 / interop"</p>
                         <h2 class="mt-2 flex items-center gap-2 font-display text-xl text-white">
-                            <i class="fa-solid fa-plug-circle-bolt text-cyan-300"></i>
+                            <i class="fa-solid fa-plug-circle-bolt text-cyan-300 transition-transform duration-300 group-hover:scale-110"></i>
                             "RC Runtime + FFI"
                         </h2>
                         <p class="mt-2 text-sm text-slate-300">
@@ -168,7 +188,13 @@ fn App() -> impl IntoView {
                     </article>
                 </section>
 
-                <section id="observatory" class="rounded-3xl border border-slate-700 bg-slate-900/70 p-7 md:p-10">
+                <div class="flex items-center gap-4 py-2">
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent"></div>
+                    <i class="fa-solid fa-diamond text-[0.5rem] text-cyan-400/50"></i>
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent"></div>
+                </div>
+
+                <section id="observatory" class="rounded-3xl border border-slate-700 border-l-4 border-l-cyan-400/60 bg-slate-900/70 p-7 md:p-10">
                     <div class="mb-5 flex flex-wrap items-end justify-between gap-2">
                         <h2 class="flex items-center gap-3 font-display text-2xl text-white md:text-3xl">
                             <i class="fa-solid fa-timeline text-cyan-300"></i>
@@ -176,31 +202,31 @@ fn App() -> impl IntoView {
                         </h2>
                         <p class="font-mono text-xs text-slate-400">
                             "from "
-                            <a class="underline decoration-cyan-400/60 underline-offset-2 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                            <a class="underline decoration-cyan-400/60 underline-offset-2 transition-colors duration-200 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
                                 "github.com/schrodingerzhu/reussir"
                             </a>
                         </p>
                     </div>
                     <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5">
+                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition-all duration-300 hover:border-cyan-400/50">
                             <p class="font-mono text-xs text-cyan-300">"phase A"</p>
                             <p class="mt-1 text-sm text-slate-200">"token instantiation"</p>
                             <p class="text-sm text-slate-200">"inc/dec cancellation (1)"</p>
                             <p class="text-sm text-slate-200">"rc decrement expansion"</p>
                         </div>
-                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5">
+                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition-all duration-300 hover:border-cyan-400/50">
                             <p class="font-mono text-xs text-cyan-300">"phase B"</p>
                             <p class="mt-1 text-sm text-slate-200">"infer variant tag"</p>
                             <p class="text-sm text-slate-200">"drop expansion"</p>
                             <p class="text-sm text-slate-200">"inc/dec cancellation (2)"</p>
                         </div>
-                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5">
+                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition-all duration-300 hover:border-cyan-400/50">
                             <p class="font-mono text-xs text-cyan-300">"phase C"</p>
                             <p class="mt-1 text-sm text-slate-200">"drop logic expansion"</p>
                             <p class="text-sm text-slate-200">"token reuse"</p>
                             <p class="text-sm text-slate-200">"scf lowering"</p>
                         </div>
-                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5">
+                        <div class="rounded-xl border border-slate-700 bg-slate-950 p-5 transition-all duration-300 hover:border-cyan-400/50">
                             <p class="font-mono text-xs text-cyan-300">"phase D"</p>
                             <p class="mt-1 text-sm text-slate-200">"polyffi + cf lowering"</p>
                             <p class="text-sm text-slate-200">"cf -> llvm"</p>
@@ -209,7 +235,7 @@ fn App() -> impl IntoView {
                     </div>
                 </section>
 
-                <section class="rounded-3xl border border-slate-700 bg-slate-900/70 p-7 md:p-10">
+                <section class="section-gradient-border rounded-3xl border border-slate-700 bg-slate-900/70 p-7 md:p-10">
                     <div class="mb-5 flex flex-wrap items-end justify-between gap-2">
                         <h2 class="flex items-center gap-3 font-display text-2xl text-white md:text-3xl">
                             <i class="fa-solid fa-gears text-cyan-300"></i>
@@ -218,7 +244,7 @@ fn App() -> impl IntoView {
                         <p class="font-mono text-xs text-slate-400">"MLIR backend is the center of Reussir's value"</p>
                     </div>
                     <div class="grid gap-4 lg:grid-cols-3">
-                        <article class="rounded-2xl border border-slate-700 bg-slate-950 p-5">
+                        <article class="rounded-2xl border border-slate-700 bg-slate-950 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50">
                             <h3 class="mb-3 font-display text-xl text-white">"Ownership Exposure"</h3>
                             <ul class="space-y-2 text-sm text-slate-300">
                                 <li>"- token instantiation makes allocation sites explicit"</li>
@@ -226,7 +252,7 @@ fn App() -> impl IntoView {
                                 <li>"- infer-variant-tag unlocks precise drop specialization"</li>
                             </ul>
                         </article>
-                        <article class="rounded-2xl border border-slate-700 bg-slate-950 p-5">
+                        <article class="rounded-2xl border border-slate-700 bg-slate-950 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50">
                             <h3 class="mb-3 font-display text-xl text-white">"Cancellation + Reuse"</h3>
                             <ul class="space-y-2 text-sm text-slate-300">
                                 <li>"- inc/dec cancellation (twice) removes redundant refcount traffic"</li>
@@ -234,7 +260,7 @@ fn App() -> impl IntoView {
                                 <li>"- token reuse dataflow rewrites fresh alloc to reuse paths"</li>
                             </ul>
                         </article>
-                        <article class="rounded-2xl border border-slate-700 bg-slate-950 p-5">
+                        <article class="rounded-2xl border border-slate-700 bg-slate-950 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/50">
                             <h3 class="mb-3 font-display text-xl text-white">"Lowering Pipeline"</h3>
                             <ul class="space-y-2 text-sm text-slate-300">
                                 <li>"- SCF-level ownership logic is preserved until late"</li>
@@ -293,6 +319,12 @@ fn App() -> impl IntoView {
                     </div>
                 </section>
 
+                <div class="flex items-center gap-4 py-2">
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
+                    <i class="fa-solid fa-diamond text-[0.5rem] text-purple-400/50"></i>
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-400/30 to-transparent"></div>
+                </div>
+
                 <section id="evidence" class="space-y-4">
                     <div class="flex flex-wrap items-end justify-between gap-2">
                         <h2 class="flex items-center gap-3 font-display text-2xl text-white md:text-3xl">
@@ -301,26 +333,32 @@ fn App() -> impl IntoView {
                         </h2>
                         <p class="font-mono text-xs text-slate-400">
                             "examples from "
-                            <a class="underline decoration-cyan-400/60 underline-offset-2 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                            <a class="underline decoration-cyan-400/60 underline-offset-2 transition-colors duration-200 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
                                 "reussir/tests/integration"
                             </a>
                         </p>
                     </div>
                     <div class="grid gap-4 lg:grid-cols-3">
-                        <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 md:p-6">
+                        <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5 md:p-6">
                             <p class="mb-2 font-mono text-xs uppercase tracking-[0.15em] text-cyan-300">"list_reverse.rr"</p>
-                            <pre class="overflow-x-auto rounded-xl bg-slate-950 p-4 text-xs leading-relaxed text-slate-100"><code>{REVERSE_SNIPPET}</code></pre>
+                            <pre class="overflow-x-auto rounded-xl border-l-[3px] border-cyan-400/60 bg-slate-950 p-4 text-xs leading-relaxed text-slate-100"><code class="language-rust">{REVERSE_SNIPPET}</code></pre>
                         </article>
-                        <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 md:p-6">
+                        <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5 md:p-6">
                             <p class="mb-2 font-mono text-xs uppercase tracking-[0.15em] text-cyan-300">"tree_mirror.rr"</p>
-                            <pre class="overflow-x-auto rounded-xl bg-slate-950 p-4 text-xs leading-relaxed text-slate-100"><code>{TREE_MIRROR_SNIPPET}</code></pre>
+                            <pre class="overflow-x-auto rounded-xl border-l-[3px] border-cyan-400/60 bg-slate-950 p-4 text-xs leading-relaxed text-slate-100"><code class="language-rust">{TREE_MIRROR_SNIPPET}</code></pre>
                         </article>
-                        <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 md:p-6">
+                        <article class="rounded-2xl border border-slate-700 bg-slate-900/70 p-5 transition-all duration-300 hover:border-cyan-400/50 hover:shadow-lg hover:shadow-cyan-500/5 md:p-6">
                             <p class="mb-2 font-mono text-xs uppercase tracking-[0.15em] text-cyan-300">"fibonacci-generic.rr"</p>
-                            <pre class="overflow-x-auto rounded-xl bg-slate-950 p-4 text-xs leading-relaxed text-slate-100"><code>{FIBONACCI_SNIPPET}</code></pre>
+                            <pre class="overflow-x-auto rounded-xl border-l-[3px] border-cyan-400/60 bg-slate-950 p-4 text-xs leading-relaxed text-slate-100"><code class="language-rust">{FIBONACCI_SNIPPET}</code></pre>
                         </article>
                     </div>
                 </section>
+
+                <div class="flex items-center gap-4 py-2">
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent"></div>
+                    <i class="fa-solid fa-diamond text-[0.5rem] text-cyan-400/50"></i>
+                    <div class="h-px flex-1 bg-gradient-to-r from-transparent via-cyan-400/30 to-transparent"></div>
+                </div>
 
                 <section class="grid gap-4 lg:grid-cols-[1.1fr_1fr]">
                     <article class="rounded-2xl border border-cyan-400/30 bg-cyan-500/10 p-6 md:p-7">
@@ -330,7 +368,7 @@ fn App() -> impl IntoView {
                         </h2>
                         <p class="mt-1 font-mono text-xs text-cyan-200">
                             "from "
-                            <a class="underline decoration-cyan-300/70 underline-offset-2 hover:text-cyan-100" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                            <a class="underline decoration-cyan-300/70 underline-offset-2 transition-colors duration-200 hover:text-cyan-100" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
                                 "AGENTS.md in public repo"
                             </a>
                         </p>
@@ -351,15 +389,14 @@ fn App() -> impl IntoView {
                         </h2>
                         <p class="mt-1 font-mono text-xs text-slate-400">
                             "human contributors only, based on "
-                            <a class="underline decoration-cyan-400/60 underline-offset-2 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
+                            <a class="underline decoration-cyan-400/60 underline-offset-2 transition-colors duration-200 hover:text-cyan-300" href=REUSSIR_REPO_URL target="_blank" rel="noreferrer">
                                 "repository history"
                             </a>
                         </p>
                         <div class="mt-4 grid gap-2 text-sm">
                             <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"Schrodinger ZHU Yifan"</div>
-                            <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"Yekai Pan"</div>
+                            <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"QueClr"</div>
                             <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"Archaversine / Adam"</div>
-                            <div class="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2">"queclr"</div>
                         </div>
                         <p class="mt-4 text-xs text-amber-300">
                             "AI accounts removed: copilot-swe-agent[bot], google-labs-jules[bot], Copilot."
@@ -367,6 +404,35 @@ fn App() -> impl IntoView {
                     </article>
                 </section>
             </main>
+
+            <footer class="relative border-t border-slate-700/50">
+                <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-8 md:flex-row md:px-8">
+                    <div>
+                        <p class="font-display text-lg font-bold text-white">"Reussir"</p>
+                        <p class="text-sm text-slate-400">"RC-based memory reuse \u{00B7} Region management \u{00B7} MLIR-powered compilation"</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <a
+                            class="inline-flex items-center gap-1.5 text-sm text-slate-400 transition-colors duration-200 hover:text-cyan-300"
+                            href=REUSSIR_REPO_URL
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            "GitHub"
+                        </a>
+                        <a
+                            class="inline-flex items-center gap-1.5 text-sm text-slate-400 transition-colors duration-200 hover:text-cyan-300"
+                            href="/reussir-design-slides.pdf"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <i class="fa-solid fa-file-pdf"></i>
+                            "Design Slides"
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </div>
     }
 }
